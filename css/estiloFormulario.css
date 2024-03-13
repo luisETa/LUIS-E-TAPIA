@@ -1,0 +1,79 @@
+*{	
+	
+}
+
+body{
+	background: url(img/Mac-3d.jpg);	
+	background-size: 100vw 100vh;/*LA IMAGEN OCUPA EL 100% DEL ANCHO*/
+									/*Y ALTO DE LA VENTANA*/	
+	background-attachment: fixed; /*PARA QUE LA IMAGEN SE QUEDE FIJA*/	
+	margin: 0;			
+}
+
+form{
+	font-family: Comic Sans MS;
+	width: 90%;
+	margin: auto;
+	background: rgba(32,51,107,0.3);/*DEPENDE DEL COLOR DE LA IMAGEN A USAR*/
+	padding: 10px 20px;
+	box-sizing: border-box; /*PARA QUE EL PADDING NO EXPANDA EL TAMAÑO DEL FORM*/
+	-moz-box-sizing: border-box;
+	margin-top: 20px;
+	border-radius: 7px;	
+}
+
+/*h2{
+	color:#fff;
+	text-align: center;
+	margin: 0;
+	font-size: 25px;
+	margin-bottom: 20px;
+}*/
+
+input, textarea{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;/*PARA QUE EL PADDING NO EXPANDA EL TAMAÑO DEL INPUT*/	
+	-moz-box-sizing: border-box;
+	font-size: 16px; 
+	border: none;
+}
+
+textarea{
+	min-height:100px;
+	max-height:200px; 
+	max-width:100%;	
+}
+
+.boton{	
+	
+	width: 30%;
+	background: #027999;
+	color: #fff;
+	padding: 20px;
+}
+.enviar{
+	display: flex;
+	justify-content: flex-end;	
+}
+
+.boton:hover{
+	cursor: pointer;
+	opacity: 0.8;	
+}
+
+#boton:active{
+	-moz-transform: scale(0.95);
+	-webkit-transform: scale(0.95);
+}
+
+
+@media (max-width:658px){
+	form{
+		width: 100%;
+	}
+	#boton{
+		width: 100%;		
+	}
+}
